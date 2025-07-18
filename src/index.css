@@ -1,0 +1,198 @@
+.flex-container {
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(171, 209, 202);
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  .form-container {
+    background-color: #dddddd; /* Color de fondo zinc (debe definirse #dddddd en lugar de zinc) */
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error-message {
+    /* background-color: #ffffff8c; Color de fondo rojo */
+    padding: 2px;
+    color: #752424; /* Texto en color blanco */
+    font-size: 1.2em;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  /* Estilos para el título "Login" */
+  .title {
+    font-size: 1.5rem; /* Tamaño de texto 2xl */
+    font-weight: bold;
+    margin-left: 2vw;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .input-field {
+    width: 80%;
+    height: 35px;
+    background-color: #dddddd; /* Color de fondo zinc */
+    color: #000000; /* Texto en color blanco */
+    padding: 4px 8px; /* Relleno de 4px en el eje x y 2px en el eje y */
+    border-radius: 4px;
+    border: 1px solid #000000; /* Borde de 1px de ancho, color negro (#000000) */
+    margin: 10px;
+    margin-left: 30px;
+  }
+  
+  /* Estilos para el mensaje de error debajo de los campos de entrada */
+  .error-text {
+    color: #752424;; /* Texto en color rojo */
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2vw;
+  }
+  
+  /* Estilos para el botón de "Login" */
+  .login-button {
+    background-color: #000000; /* Color de fondo negro (#000000) */
+    color: #ffffff; /* Texto en color blanco */
+    padding: 8px 16px; /* Relleno de 8px en el eje x y 16px en el eje y */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 300px;
+  }
+  
+  /* Estilos para el enlace de "Registrarse" */
+  .register-link {
+    color: #1c4c83; /* Texto en color azul (#0077ff) */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  font-weight: bold;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+  }
+
+  .f {
+    display: flex;
+    gap: 0.5rem; /* gap-x-2 will set the horizontal gap to 0.5rem */
+    justify-content: space-between; /* justify-between will evenly distribute items along the main axis */
+    margin-top: 1rem; /* mt-3 will set the top margin to 1rem */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .submit-button {
+    background-color: #000000; /* bg-black will set the background color to black (#000000) */
+    color: #ffffff; /* text-white will set the text color to white */
+    padding: 0.5rem 1rem; /* px-4 py-2 will set the padding to 0.5rem horizontally and 1rem vertically */
+    border: none;
+    border-radius: 0.25rem; /* rounded-md will set the border radius to 0.25rem */
+    cursor: pointer;
+    margin:20px;
+    margin-left: 270px;
+  }
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  :only-child::-webkit-scrollbar-track {
+    background: #a3b18a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    transition: 2s;
+    background: #555;
+  }
+  /* loading */
+
+  .loading-page {
+    padding-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .loading-container {
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #51809e4f;
+  }
+  
+  .loading-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+    opacity: 1;
+    animation: fadeOut 2s linear infinite;
+  }
+  
+  .loading-bar {
+    width: 20rem;
+    height: 1rem;
+    border: 1px solid #b6c1dd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .filler {
+    width: 0;
+    height: 100%;
+    background-color: #345b73;
+    animation: fillAnimation 2s linear infinite;
+  }
+  
+  @keyframes fillAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .loading-text-small {
+    font-size: 18px;
+    margin-top: 5px;
+    opacity: 1;
+    animation: fadeOut 2s linear infinite;
+  }
+  
+  .please-wait-text {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 1;
+    animation: fadeOut 2s linear infinite;
+  }
+  
+  @keyframes fadeOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  /* nombre del usuario*/
+  .user-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+    /* margin-right: 0px; */
+    /* padding-right: 200px; */
+  }
+  
+  /* Estilos para el texto del nombre */
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Cambia el color según tus preferencias */
+    /* Agrega más estilos aquí según sea necesario */
+  }
